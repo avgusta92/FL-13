@@ -172,20 +172,20 @@
 }
 
 @media print {
-    .tm-main-nav,
-    .tm-team-img,
-    #about,
-    .gallery-container,
-    .carousel-indicators,
-    section:last-of-type,
-    .blocks .tm-content-box{
+	.tm-main-nav,
+	.tm-team-img,
+	#about,
+	.gallery-container,
+	.carousel-indicators,
+	section:last-of-type,
+	.blocks .tm-content-box{
 		display: none;
 	}
 
-    body {
-        background-color: #ffffff;
-        padding-top: 0px;
-    }
+	body {
+		background-color: #ffffff;
+		padding-top: 0px;
+	}
 
 	.tm-content-box {
 		margin: 0;
@@ -203,7 +203,7 @@
 	.tm-team-description-container, .tm-section-title {
 		max-width: inherit;
 	}
-	  
+		
 	.tm-main-content {
 		padding-top: 0;
 	}
