@@ -20,7 +20,7 @@ body, p {
 
 body {
   line-height: 1.5;
-  font-family: 'Source Sans Pro';
+  font-family: "Source Sans Pro";
   color: #2D2F3C;
   background-color: #21232E;
   position: relative; }
@@ -30,7 +30,7 @@ img {
   display: block; }
 
 header {
-  height: 77vh;
+  height: 680px;
   padding: 0 192px;
   background-image: url(../img/m-h-night.jpg);
   background-repeat: no-repeat;
@@ -154,7 +154,7 @@ header {
     align-items: center; }
     .section .section_banner .section_banner_text_wrap {
       margin-left: 170px;
-      font-family: 'Hind'; }
+      font-family: "Hind"; }
       .section .section_banner .section_banner_text_wrap .section_banner_heading {
         font-size: 29px;
         font-weight: bold;
@@ -201,7 +201,7 @@ footer {
     footer .footer-wrap .footer_text {
       width: 300px;
       font-size: 14px;
-      font-family: 'Hind';
+      font-family: "Hind";
       letter-spacing: 0.01em; }
     footer .footer-wrap .footer-cr {
-      font-family: 'Hind'; }
+      font-family: "Hind"; }
