@@ -1,0 +1,207 @@
+header .header-wrap .landing-logo p, footer .footer-wrap .footer_logo.landing-logo p {
+  display: flex;
+  flex-direction: column;
+  padding-left: 14px;
+  padding-top: 4px;
+  font-family: "Hind";
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: 0.01em; }
+
+header .header-wrap .landing-logo span, footer .footer-wrap .footer_logo.landing-logo span {
+  padding-top: 3px;
+  font-size: 10px;
+  text-align: center;
+  letter-spacing: 0; }
+
+body, p {
+  margin: 0; }
+
+body {
+  line-height: 1.5;
+  font-family: 'Source Sans Pro';
+  color: #2D2F3C;
+  background-color: #ffffff;
+  position: relative; }
+
+img {
+  max-width: 100%;
+  display: block; }
+
+header {
+  height: 77vh;
+  padding: 0 192px;
+  background-image: url(../img/m-h-day.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 0 0 40% 50% / 100% 60% 40% 0; }
+  header .header-wrap {
+    max-width: 733px;
+    color: #2D2F3C; }
+    header .header-wrap .landing-logo {
+      padding-top: 20px;
+      display: flex;
+      color: #2D2F3C; }
+      header .header-wrap .landing-logo span {
+        font-weight: 100; }
+    header .header-wrap .header_heading {
+      padding-top: 72px;
+      position: relative;
+      z-index: 2;
+      font-size: 70px;
+      font-weight: bold;
+      line-height: 1.03;
+      letter-spacing: 0.014em; }
+      header .header-wrap .header_heading::after {
+        content: "";
+        position: absolute;
+        background-color: #12A0C7;
+        height: 50px;
+        width: 304px;
+        left: 0;
+        bottom: 0;
+        z-index: -1; }
+    header .header-wrap .header_text {
+      padding-top: 40px;
+      letter-spacing: 0.027em;
+      white-space: pre-line; }
+    header .header-wrap div:not([class]) {
+      padding-top: 62px; }
+      header .header-wrap div:not([class]) .header_button {
+        height: 48px;
+        width: 142px;
+        background-color: #699900;
+        border: none;
+        border-radius: 2px;
+        font-size: 16px;
+        font-weight: bold;
+        color: #ffffff; }
+      header .header-wrap div:not([class]) .login {
+        color: #ffffff;
+        font-size: 20px;
+        padding-left: 150px; }
+
+.section {
+  width: 72%;
+  margin: 0 auto; }
+  .section .section_text {
+    position: relative;
+    display: inline-block;
+    margin: 41px 0;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-size: 41px;
+    line-height: 1.02;
+    letter-spacing: 0.01em;
+    font-weight: 600;
+    color: #2D2F3C; }
+    .section .section_text::after {
+      content: "";
+      position: absolute;
+      background-color: #12A0C7;
+      height: 50px;
+      width: 184px;
+      right: 14px;
+      bottom: 4px;
+      z-index: -1;
+      background-color: #12A0C7; }
+  .section .section_card_wrap {
+    width: 92%;
+    margin: 0 auto; }
+    .section .section_card_wrap .section_card {
+      margin-bottom: 24px;
+      padding: 18px;
+      padding-right: 100px;
+      border-radius: 4px;
+      background-color: #3B3F50;
+      display: flex;
+      justify-content: space-between; }
+      .section .section_card_wrap .section_card .section_card_img {
+        width: 1500px;
+        border-radius: 4px;
+        padding-right: 90px; }
+      .section .section_card_wrap .section_card .section_card_right_container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center; }
+        .section .section_card_wrap .section_card .section_card_right_container .section_card_heading {
+          color: #ffffff;
+          text-align: center;
+          font-size: 24px;
+          font-weight: bold;
+          margin-bottom: 20px; }
+        .section .section_card_wrap .section_card .section_card_right_container .section_card_text {
+          color: rgba(255, 255, 255, 0.7); }
+        .section .section_card_wrap .section_card .section_card_right_container .section_link {
+          color: #ffffff;
+          font-size: 17px;
+          text-align: center;
+          margin-top: 10px; }
+  .section .section_banner {
+    background: linear-gradient(135deg, #629119 0%, #315FCA 100%);
+    border-radius: 4px;
+    line-height: 1.4;
+    margin-top: 60px;
+    height: 160px;
+    transform: translateY(80px);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; }
+    .section .section_banner .section_banner_text_wrap {
+      margin-left: 170px;
+      font-family: 'Hind'; }
+      .section .section_banner .section_banner_text_wrap .section_banner_heading {
+        font-size: 29px;
+        font-weight: bold;
+        letter-spacing: 0.014em;
+        position: relative;
+        z-index: 2;
+        color: #2D2F3C; }
+      .section .section_banner .section_banner_text_wrap::after {
+        content: "";
+        position: absolute;
+        background-color: #12A0C7;
+        height: 50px;
+        width: 64px;
+        left: 294px;
+        bottom: 82px;
+        z-index: -1; }
+      .section .section_banner .section_banner_text_wrap .section_banner_text {
+        margin: 5px 0;
+        font-size: 16px;
+        color: rgba(255, 255, 255, 0.7); }
+    .section .section_banner .section_banner_button {
+      height: 48px;
+      width: 142px;
+      background-color: #699900;
+      border: none;
+      border-radius: 2px;
+      font-size: 16px;
+      font-weight: bold;
+      color: #ffffff;
+      margin-right: 170px; }
+
+footer {
+  background-color: #3B3F50;
+  height: 110px;
+  padding-top: 130px;
+  color: rgba(255, 255, 255, 0.7); }
+  footer .footer-wrap {
+    margin: 0 4%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    footer .footer-wrap .footer_logo.landing-logo {
+      display: flex; }
+    footer .footer-wrap .footer_text {
+      width: 300px;
+      font-size: 14px;
+      font-family: 'Hind';
+      letter-spacing: 0.01em; }
+    footer .footer-wrap .footer-cr {
+      font-family: 'Hind'; }

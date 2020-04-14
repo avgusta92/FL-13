@@ -1,0 +1,300 @@
+$font:(
+	hind: "Hind",
+	sourceSansPro: "Source Sans Pro",
+	logoStyle: $fontLogo
+);
+
+@mixin styleButton {
+	height: 48px;
+	width: 142px;
+	background-color: $buttonColor;
+	border: none;
+	border-radius: 2px;
+	font-size: 16px;
+	font-weight: bold;
+	color: #ffffff;
+}
+
+@mixin styleLink ($font-size-link:16px) {
+	color: #ffffff;
+	font-size: $font-size-link;
+}
+
+@mixin background-color-section-banner {
+	background: linear-gradient(135deg, $gradient1Color 0%, $gradient2Color 100%)
+}
+
+%p-logo-style {
+	display: flex;
+	flex-direction: column;
+	padding-left: 14px;
+	padding-top: 4px;
+	font-family: map-get($font, "logoStyle");
+	font-size: 24px;
+	font-weight: 600;
+	line-height: 1;
+	letter-spacing: 0.01em;
+}
+
+%span-logo-style {
+	padding-top: 3px;
+	font-size: 10px;
+	text-align: center;
+	letter-spacing: 0;
+}
+
+body, p {
+	margin: 0;
+}
+
+body {
+	line-height: 1.5;
+	font-family: map-get($font, "sourceSansPro");
+	color: #2D2F3C;
+	background-color: $bgColor;
+	position: relative;
+}
+
+img {
+	max-width: 100%;
+	display: block;
+}
+
+header {
+	height: 77vh;
+	padding: 0 192px;
+	background-image: $bgImage;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	border-radius: 0 0 40% 50% / 100% 60% 40% 0;
+
+	.header-wrap {
+		max-width: 733px;
+		color: $fontColorMain;
+
+		.landing-logo {
+			padding-top: 20px;
+			display: flex;
+			color: $fontColorMain;
+
+			p {
+				@extend %p-logo-style;
+			}
+
+			span {
+				@extend %span-logo-style;
+				font-weight: 100;
+			}
+		}
+
+		.header_heading {
+			padding-top: 72px;
+			position: relative;
+			z-index: 2;
+			font-size: 70px;
+			font-weight: bold;
+			line-height: 1.03;
+			letter-spacing: 0.014em;
+
+
+			&::after {
+				content: "";
+				position: absolute;
+				background-color: $highlightColor;
+				height: 50px;
+				width: 304px;
+				left: 0;
+				bottom: 0;
+				z-index: -1;				
+			}
+		}
+
+		.header_text {	
+			padding-top: 40px;
+			letter-spacing: 0.027em;
+			white-space: pre-line;
+		}
+
+		div:not([class]) {
+			padding-top: 62px;
+
+
+			.header_button {
+				@include styleButton;
+			}
+
+			.login {
+				@include styleLink(20px);
+
+				padding-left: 150px;
+			}
+		}
+	}
+}
+
+.section {
+	width: 72%;
+	margin: 0 auto;
+
+	.section_text {
+		position: relative;
+		display: inline-block;
+		margin: 41px 0;
+		left: 50%;
+		transform: translateX(-50%);
+		text-align: center;
+		font-size: 41px;
+		line-height: 1.02;
+		letter-spacing: 0.01em;
+		font-weight: 600;
+		color: $fontColorMain;
+
+		&::after {
+			content: "";
+			position: absolute;
+			background-color: #12A0C7;
+			height: 50px;
+			width: 184px;
+			right: 14px;
+			bottom: 4px;
+			z-index: -1;
+			background-color: $highlightColor;
+			}
+	}
+
+	.section_card_wrap {
+		width: 92%;
+		margin: 0 auto;
+
+		.section_card {
+			margin-bottom: 24px;
+			padding: 18px;
+			padding-right: 100px;
+			border-radius: 4px;
+			background-color: $bgFooterAndCards;
+			display:flex;
+			justify-content: space-between;
+
+			.section_card_img {
+				width: 1500px;
+				border-radius: 4px;
+				padding-right: 90px;
+			}
+
+			.section_card_right_container {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			align-content: center;
+
+
+				.section_card_heading {
+					color: #ffffff;
+					text-align: center; 
+					font-size: 24px;
+					font-weight: bold;
+					margin-bottom: 20px;
+				}
+
+				.section_card_text {
+					color: rgba(255, 255, 255, .7);
+
+				}
+				
+				.section_link {
+					@include styleLink (17px);
+					text-align: center;
+					margin-top: 10px;
+				}
+
+			}
+		}
+	}
+
+	.section_banner {
+		@include background-color-section-banner;
+		border-radius: 4px;
+		line-height: 1.4;
+		margin-top: 60px;
+		height: 160px;
+		transform: translateY(80px);
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+
+		.section_banner_text_wrap {
+			margin-left: 170px;
+			font-family: map-get($font, "hind");
+
+			.section_banner_heading {
+				font-size: 29px;
+				font-weight: bold;
+				letter-spacing: 0.014em;
+				position: relative;
+				z-index: 2;
+				color: $fontColorMain;
+			}
+
+			&::after {
+				content: "";
+				position: absolute;
+				background-color: $highlightColor;
+				height: 50px;
+				width: 64px;
+				left: 294px;
+				bottom: 82px;
+				z-index: -1;
+			}
+
+			.section_banner_text {
+				margin: 5px 0;
+				font-size: 16px;
+				color: rgba(255, 255, 255, .7);
+			}
+		}
+
+		.section_banner_button {
+			@include styleButton;
+			margin-right: 170px;
+		}
+	}
+}
+
+footer {
+	background-color: $bgFooterAndCards;
+	height: 110px;
+	padding-top: 130px;
+	color: rgba(255, 255, 255, .7);
+
+	.footer-wrap {
+		margin: 0 4%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		.footer_logo.landing-logo {
+			display: flex;
+
+			p {
+				@extend %p-logo-style;
+			}
+
+			span {
+				@extend %span-logo-style;
+			}
+		}
+
+		.footer_text {
+			width: 300px;
+			font-size: 14px;
+			font-family: map-get($font, "hind");
+			letter-spacing: 0.01em;
+		}
+
+		.footer-cr {
+			font-family: map-get($font, "hind");
+		}
+	}
+}
