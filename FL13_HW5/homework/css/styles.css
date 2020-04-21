@@ -1,114 +1,120 @@
 .post-content-1 {
-	background: #F3D250;
+  background: #f3d250;
 }
 .post-content-2 {
-	background: #8D8741;
+  background: #8d8741;
 }
 .post-content-3 {
-	background: #659DBD;
+  background: #659dbd;
 }
 .post-content-4 {
-	background: #DAAD86;
+  background: #daad86;
 }
 
 * {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-body, p, h1, h2, h3, h4, a {
-	margin: 0;
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+a {
+  margin: 0;
 }
 
 body {
   font-family: roboto;
-	max-width: 980px;
-	margin: 0 auto;
+  max-width: 980px;
+  margin: 0 auto;
   background-color: #0b192f;
   color: #484848;
 }
 
 p {
-	font-weight: 100;
+  font-weight: 100;
   font-size: 11px;
 }
 
 .heading-wrap {
-	height: 72px;
+  height: 72px;
   padding: 24px 70px 26px 24px;
-	background-color: #162b4d;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+  background-color: #162b4d;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .logo {
-	color: #ffffff;
-	font-size: 28px;
+  color: #ffffff;
+  font-size: 28px;
 }
 
 .logo span {
-	color: #9d27b0;
+  color: #9d27b0;
 }
 
 .nav-main {
-	display: flex;
+  display: flex;
 }
 
 .nav-main-link {
-	color: #ffffff;
-	text-decoration: none;
-	font-weight: 300;
-	font-size: 14px;
-	height: 72px;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+  font-size: 14px;
+  height: 72px;
   width: 72px;
   display: flex;
   margin-left: 22px;
-	align-items: center;
-	justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .nav-main-link:hover {
-	background-color: rgb(184,184,184,0.2);
+  background-color: rgb(184, 184, 184, 0.2);
 }
 
 .nav-burger {
-	display: none;
+  display: none;
 }
 
 .post-and-news {
-	display: flex;
+  display: flex;
   margin-top: 20px;
   margin-bottom: 20px;
 }
 
 .colum {
-	width: 124px;
+  width: 124px;
 }
 
 .colum-posts {
-	margin-right: 20px;
-	flex-grow: 6;
+  margin-right: 20px;
+  flex-grow: 6;
 }
 
 .colum-news {
-	flex-grow: 1;
+  flex-grow: 1;
 }
 
 .post {
   display: flex;
-	position: relative;
+  position: relative;
 }
 
 .post-hover {
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	z-index: 1000;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
 }
 
 .post-hover:hover {
-	background-color:rgb(243,210,80, 0.5);
-	z-index: 1000;
+  background-color: rgb(243, 210, 80, 0.5);
+  z-index: 1000;
 }
 
 .post-image {
@@ -116,7 +122,7 @@ p {
 }
 
 img {
-	width: 100%;
+  width: 100%;
   height: 100%;
   object-fit: cover;
   display: block;
@@ -128,7 +134,7 @@ img {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-	position: relative;
+  position: relative;
 }
 
 .post-time {
@@ -136,12 +142,12 @@ img {
 }
 
 .post-time-day {
-	font-weight: 100;
-	font-size: 36px;
+  font-weight: 100;
+  font-size: 36px;
 }
 
 .post-time-month {
-	font-weight: 100;
+  font-weight: 100;
   font-size: 20px;
   line-height: 1;
 }
@@ -153,8 +159,8 @@ img {
 }
 
 .post-text-h2 {
-	font-weight: 100;
-	font-size: 27px;
+  font-weight: 100;
+  font-size: 27px;
   line-height: 1.2;
 }
 
@@ -173,51 +179,51 @@ img {
   color: #ffffff;
 }
 
-.post-content-5 p{
+.post-content-5 p {
   font-weight: 400;
 }
 
-.post-even{
+.post-even {
   flex-direction: row-reverse;
 }
 
-.post-even .post-content{
+.post-even .post-content {
   flex-direction: row-reverse;
   padding: 16px 30px 30px 12px;
 }
 
-.post-even .post-text-wrap{
+.post-even .post-text-wrap {
   text-align: right;
   padding-right: 0px;
   padding-left: 20px;
 }
 
 .news {
-	background-color: #ffffff;
-	margin-bottom: 20px;
+  background-color: #ffffff;
+  margin-bottom: 20px;
 }
 
 .news-content {
-	padding: 28px 20px 24px 24px;
+  padding: 28px 20px 24px 24px;
 }
 
 .news-h3 {
-	font-weight: 100;
-	line-height: 1;
+  font-weight: 100;
+  line-height: 1;
   font-size: 22px;
   padding-bottom: 26px;
 }
 
 .news-text {
-	display: flex;
+  display: flex;
   line-height: 1.7;
   padding-bottom: 18px;
 }
 
 .news-btn {
-  border:  #484848 solid 1px;
+  border: #484848 solid 1px;
   background-color: #ffffff;
-  color:  #484848;;
+  color: #484848;
   padding: 4px;
   text-align: center;
   text-decoration: none;
@@ -226,74 +232,73 @@ img {
 }
 
 .footer-wrap {
-	height: 70px;
-	padding: 22px;
-	background-color: #162b4d;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+  height: 70px;
+  padding: 22px;
+  background-color: #162b4d;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .footer p {
-	color: rgba(255, 255, 255, 0.5);
-	font-weight: 100;
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: 100;
   font-size: 11px;
   line-height: 1.6;
 }
 
-@media screen and (max-width:768px) {
-	body {
-		width: 100%;
-		padding: 0 10px;
-	}
+@media screen and (max-width: 768px) {
+  body {
+    width: 100%;
+    padding: 0 10px;
+  }
 
-	.heading-wrap {
-		flex-direction: column-reverse;
-		height: 150px;
-		padding: 20px 0 30px 0;
+  .heading-wrap {
+    flex-direction: column-reverse;
+    height: 150px;
+    padding: 20px 0 30px 0;
+  }
 
-	}
+  .nav-main-link {
+    display: none;
+  }
 
-	.nav-main-link {
-		display: none;
-	}
+  .nav-burger {
+    width: 20px;
+    height: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 
-	.nav-burger {
-		width: 20px;
-		height: 12px;
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
-	}
+  .nav-burger-lane {
+    width: 100%;
+    height: 1px;
+    background-color: #ffffff;
+  }
 
-	.nav-burger-lane {
-		width: 100%;
-		height: 1px;
-		background-color: #ffffff;
-	}
-
-	.post {
-		flex-direction: column;
+  .post {
+    flex-direction: column;
     text-align: left;
-	}
+  }
 
   .post-image {
-		height: 200px;
-		width: 100%;
+    height: 200px;
+    width: 100%;
   }
-  
+
   .post-content {
     width: 100%;
     flex-direction: column;
     padding: 30px;
   }
 
-  .post-even .post-content{
+  .post-even .post-content {
     flex-direction: column;
     padding: 30px;
   }
 
-  .post-even .post-text-wrap{
+  .post-even .post-text-wrap {
     text-align: left;
     padding: 0;
   }
@@ -323,39 +328,37 @@ img {
     padding: 0;
   }
 
-	.footer-wrap {
-		flex-direction: column;
+  .footer-wrap {
+    flex-direction: column;
     text-align: center;
     height: auto;
-	}
+  }
 
-	.footer-colum-right {
-		text-align: center;
-	}
-
+  .footer-colum-right {
+    text-align: center;
+  }
 }
 
-@media screen and (max-width:480px) {
-	body {
-		width: 100%;
-		padding: 0 10px;
-	}
+@media screen and (max-width: 480px) {
+  body {
+    width: 100%;
+    padding: 0 10px;
+  }
 
-	.post-and-news {
-		flex-direction: column;
-	}
+  .post-and-news {
+    flex-direction: column;
+  }
 
-	.colum-posts {
-		width: 100%;
-	}
+  .colum-posts {
+    width: 100%;
+  }
 
-	.colum-news {
-		width: 100%;
-		margin-top: 10px;
-	}
+  .colum-news {
+    width: 100%;
+    margin-top: 10px;
+  }
 
-	.footer-wrap {
-		height: 120px;
-	}
-
+  .footer-wrap {
+    height: 120px;
+  }
 }
