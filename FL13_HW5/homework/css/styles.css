@@ -231,6 +231,11 @@ img {
   font-size: 10px;
 }
 
+.news-btn:hover {
+  border: none;
+  border-bottom: 1px solid #484848;
+}
+
 .footer-wrap {
   height: 70px;
   padding: 22px;
