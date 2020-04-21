@@ -183,16 +183,16 @@ img {
   font-weight: 400;
 }
 
-.post-even {
+.post:nth-child(2n) {
   flex-direction: row-reverse;
 }
 
-.post-even .post-content {
+.post:nth-child(2n) .post-content {
   flex-direction: row-reverse;
   padding: 16px 30px 30px 12px;
 }
 
-.post-even .post-text-wrap {
+.post:nth-child(2n) .post-text-wrap {
   text-align: right;
   padding-right: 0px;
   padding-left: 20px;
@@ -298,12 +298,16 @@ img {
     padding: 30px;
   }
 
-  .post-even .post-content {
+  .post:nth-child(2n) {
+    flex-direction: column;
+  }
+
+  .post:nth-child(2n) .post-content {
     flex-direction: column;
     padding: 30px;
   }
 
-  .post-even .post-text-wrap {
+  .post:nth-child(2n) .post-text-wrap {
     text-align: left;
     padding: 0;
   }
