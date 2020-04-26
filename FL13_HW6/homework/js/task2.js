@@ -1,11 +1,11 @@
 let inputWord = prompt(`Please input a word`, ``);
-const NUMBER2 = 2;
 
-if (!inputWord || inputWord === null || inputWord.trim() === ``) {
+if (!inputWord || inputWord.trim() === ``) {
   alert(`Invalid input data`);
 } else {
-  let placeCharacter = inputWord.length % NUMBER2;
-  let number = parseInt(inputWord.length / NUMBER2, 10);
+  const NUMBER2 = 2;
+  const placeCharacter = inputWord.length % NUMBER2;
+  const number = parseInt(inputWord.length / NUMBER2, 10);
   let result;
 
   if (placeCharacter === 0) {
