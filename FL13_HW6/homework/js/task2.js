@@ -1,15 +1,18 @@
 let inputWord = prompt(`Please input a word`, ``);
 const NUMBER2 = 2;
-let placeCharacter = inputWord.length % NUMBER2;
-let number = parseInt(inputWord.length / NUMBER2, 10);
-let result;
 
-if (!inputWord || inputWord.trim() === ``) {
+if (!inputWord || inputWord === null || inputWord.trim() === ``) {
   alert(`Invalid input data`);
-} else if (placeCharacter === 0) {
-  result = inputWord[number] + inputWord[number + 1];
-  alert(result);
 } else {
-  result = inputWord[number];
+  let placeCharacter = inputWord.length % NUMBER2;
+  let number = parseInt(inputWord.length / NUMBER2, 10);
+  let result;
+
+  if (placeCharacter === 0) {
+    result = inputWord[number] + inputWord[number + 1];
+  } else {
+    result = inputWord[number];
+  }
+
   alert(result);
 }
