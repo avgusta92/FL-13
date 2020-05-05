@@ -38,14 +38,14 @@ function filterArray(arr, func) {
 }
 
 function containsValue(arr, value) {
-  let resultTrue = 0;
+  let result = false;
   function newFunc(el) {
     if (el === value) {
-      resultTrue++;
+      result = true;
     }
   }
   executeforEach(arr, newFunc);
-  return resultTrue > 0;
+  return result;
 }
 
 function flipOver(str) {
