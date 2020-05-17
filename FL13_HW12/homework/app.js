@@ -132,12 +132,11 @@ function previewBookButtonFunc(event) {
 }
 
 function setNewHash(event, result) {
-  location.hash = result;
-  setNewSearch(event);
-}
+  let hashValue = `#${result}`;
+  let searchValue = `?id=${event.currentTarget.id}`;
+  // setNewSearch(event);
 
-function setNewSearch(event) {
-  location.search = `id=${event.currentTarget.id}`;
+  location.href = location.origin + location.pathname + searchValue + hashValue;
 }
 
 function bookPreview(book, place) {
@@ -218,6 +217,7 @@ function setItemsFunc(book, place) {
 
   let inputName = document.createElement(`input`);
   inputName.setAttribute(`type`, `text`);
+  inputName.setAttribute(`required`, null);
   inputName.className = `input-book-name`;
   inputWrapName.appendChild(inputName);
 
@@ -232,6 +232,7 @@ function setItemsFunc(book, place) {
 
   let inputAuthor = document.createElement(`input`);
   inputAuthor.setAttribute(`type`, `text`);
+  inputAuthor.setAttribute(`required`, null);
   inputAuthor.className = `input-book-author`;
   inputWrapAuthor.appendChild(inputAuthor);
 
@@ -246,6 +247,7 @@ function setItemsFunc(book, place) {
 
   let inputImageUrl = document.createElement(`input`);
   inputImageUrl.setAttribute(`type`, `text`);
+  inputImageUrl.setAttribute(`required`, null);
   inputImageUrl.className = `input-book-image-url`;
   inputWrapImageUrl.appendChild(inputImageUrl);
 
@@ -260,6 +262,7 @@ function setItemsFunc(book, place) {
 
   let inputPlot = document.createElement(`textarea`);
   inputPlot.className = `input-book-plot`;
+  inputPlot.setAttribute(`required`, null);
   inputWrapPlot.appendChild(inputPlot);
 
   let buttons = document.createElement(`div`);
