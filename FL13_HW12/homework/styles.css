@@ -1,0 +1,204 @@
+* {
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+a {
+  margin: 0;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+
+.left-section {
+  min-width: 320px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 5px 0px 8px -1px rgba(117, 117, 117, 0.17);
+}
+
+.left-section-top {
+  width: 100%;
+}
+
+.left-section-title {
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #efefef;
+}
+
+.book {
+  width: auto;
+  height: 60px;
+  display: flex;
+  border-bottom: solid 1px #efefef;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.list-book-image {
+  height: 100%;
+  width: auto;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.list-text-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.book-name {
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.edit-book-button {
+  border-radius: 2px;
+  padding: 4px;
+  width: 50px;
+  font-size: 8px;
+  background: #efefef;
+  color: #656565;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+}
+
+.add-book-button {
+  margin: 40px;
+  width: 160px;
+  background: transparent;
+  color: #2885c6;
+  font-weight: 500;
+  border: solid 1px #2885c6;
+  border-radius: 4px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.right-section {
+  width: 100%;
+}
+
+.book-preview {
+  height: 100vh;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.img-wrap {
+  background-color: #efefef;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.book-image {
+  height: 500px;
+  width: auto;
+}
+
+.preview-book-plot {
+  margin-top: 20px;
+}
+
+.book-edit-name {
+  height: 40px;
+  background-color: #dedede;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.book-edit-form {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-wrap {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+input,
+textarea {
+  margin-top: 10px;
+  height: 40px;
+  padding: 10px;
+  border-radius: 4px;
+  border: solid 1px #dedede;
+}
+
+.input-wrap-top {
+  width: 50%;
+}
+
+.input-wrap-name {
+  margin-right: 10px;
+}
+
+.input-wrap-author {
+  margin-left: 10px;
+}
+
+.inputs-top {
+  display: flex;
+}
+
+.input-book-plot {
+  height: 200px;
+}
+
+.button {
+  margin-top: 20px;
+  margin-right: 40px;
+  width: 160px;
+  font-weight: 500;
+  border-radius: 4px;
+  height: 40px;
+  cursor: pointer;
+  color: white;
+  border: none;
+}
+
+.cancel-button {
+  background: #d2354b;
+}
+
+.save-button,
+.add-button {
+  background: #28c66e;
+}
