@@ -2,9 +2,11 @@
   padding-left: 0;
   padding-right: 0;
 }
+
 .navigation__logo {
   font-size: 24px;
 }
+
 .navigation__button-secondary {
   border-radius: 0;
 }
@@ -25,9 +27,11 @@
 .section {
   padding-top: 40px;
 }
+
 .section__title {
   padding-bottom: 20px;
 }
+
 .section__subtitle {
   padding-bottom: 20px;
 }
@@ -47,9 +51,11 @@
   padding-top: 40px;
   padding-bottom: 10px;
 }
+
 .footer__copyright {
   padding-top: 20px;
 }
+
 .footer__button,
 .footer__input {
   padding-left: 0;
