@@ -26,63 +26,49 @@ const Student = function (name, mail) {
 
 const FrontendLab = function (students, failedLimit) {
   let failedHomeworksLimit = failedLimit;
-  let studentsList = [];
-
-  function studentsFunc() {
-    let studentResult = [];
-
-    for (let i = 0; i < students.length; i++) {
-      for (let y = 0; y < studentsList[0].results.length; y++) {
-        if (students[i].email === studentsList[0].results[y].email) {
-          let newObj = [];
-
-          for (let a = 0; a < studentsList.length; a++) {
-            newObj.push({
-              topic: studentsList[a].topic,
-              success: studentsList[a].results[y].success
-            });
-          }
-
-          studentResult.push({
-            name: students[i].name,
-            email: students[i].email,
-            result: newObj
-          });
-        }
-      }
-    }
-
-    return studentResult;
-  }
+  let studentsList = students;
 
   this.printStudentsList = function () {
-    let studentResult = studentsFunc();
-
-    for (let i = 0; i < studentResult.length; i++) {
+    for (let i = 0; i < studentsList.length; i++) {
       console.log(
-        `name: ${studentResult[i].name}, email: ${studentResult[i].email}`
+        `name: ${studentsList[i].name}, email: ${studentsList[i].email}`
       );
-      console.log(studentResult[i].result);
+      console.log(studentsList[i].result);
     }
   };
 
   this.addHomeworkResults = function (homeworkResults) {
-    studentsList.push(homeworkResults);
+
+    for (let i = 0; i < studentsList.length; i++) {
+      for (let y = 0; y < homeworkResults.results.length; y++) {
+        if (studentsList[i].email === homeworkResults.results[y].email) {
+
+          if(!studentsList[i].hasOwnProperty(`result`)) {
+            studentsList[i].result = []
+          } 
+
+          studentsList[i].result.push({
+            topic: homeworkResults.topic,
+            success: homeworkResults.results[y].success
+          })
+          
+        }
+      }
+    }
+
   };
 
   this.printStudentsElitableForTest = function () {
-    let studentResult = studentsFunc();
-
-    for (let i = 0; i < studentResult.length; i++) {
+    for (let i = 0; i < studentsList.length; i++) {
       let resultFalse = 0;
-      for (let y = 0; y < studentResult[i].result.length; y++) {
-        if (studentResult[i].result[y].success === false) {
+      for (let y = 0; y < studentsList[i].result.length; y++) {
+        if (studentsList[i].result[y].success === false) {
           resultFalse++;
         }
       }
       if (resultFalse <= failedHomeworksLimit) {
         console.log(
-          `name: ${studentResult[i].name}, email: ${studentResult[i].email}`
+          `name: ${studentsList[i].name}, email: ${studentsList[i].email}`
         );
       }
     }
