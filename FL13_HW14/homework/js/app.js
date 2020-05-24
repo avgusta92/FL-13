@@ -23,7 +23,6 @@ const Student = function (name, mail) {
   };
 };
 
-
 const FrontendLab = function (students, failedLimit) {
   let failedHomeworksLimit = failedLimit;
   let studentsList = students;
@@ -38,24 +37,20 @@ const FrontendLab = function (students, failedLimit) {
   };
 
   this.addHomeworkResults = function (homeworkResults) {
-
     for (let i = 0; i < studentsList.length; i++) {
       for (let y = 0; y < homeworkResults.results.length; y++) {
         if (studentsList[i].email === homeworkResults.results[y].email) {
-
-          if(!studentsList[i].hasOwnProperty(`result`)) {
-            studentsList[i].result = []
-          } 
+          if (!studentsList[i].hasOwnProperty(`result`)) {
+            studentsList[i].result = [];
+          }
 
           studentsList[i].result.push({
             topic: homeworkResults.topic,
             success: homeworkResults.results[y].success
-          })
-          
+          });
         }
       }
     }
-
   };
 
   this.printStudentsElitableForTest = function () {
