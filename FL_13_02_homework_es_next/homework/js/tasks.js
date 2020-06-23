@@ -1,5 +1,5 @@
 const arr = [1, 2, 66, 3, 4, 5, 6, 20, 7, 23, 8, 9];
-let maxElemant = arr => Math.max(...arr);
+const maxElemant = arr => Math.max(...arr);
 
 console.log(maxElemant(arr));
 
@@ -15,14 +15,14 @@ console.log(array, copiedArray);
 console.log(array === copiedArray);
 
 
-let a = {name: 123}
+const a = {name: 123}
 function addUniqueId (value) {
     let newValue = Object.assign({}, value);
     let id = Symbol('id');
     newValue[id] = Math.round(Math.random() * 1000000);
     return newValue;
 }
-let b = addUniqueId(a);
+const b = addUniqueId(a);
 
 console.log(a);
 console.log(b);
@@ -31,8 +31,8 @@ console.log(a !== b);
 
 const oldObj = {name: `Someone`, details: { id: 1, age: 11, university: `UNI`}};
 function regroupObject(oldObj) {
-    let {name, details} = oldObj;
-    return newObj = {
+    const {name, details} = oldObj;
+    return {
         university: details.university, 
         user: { 
             age: details.age,
@@ -46,21 +46,13 @@ console.log(regroupObject(oldObj));
 
 
 const arrOfNumbers = [1, 1, 23, 3, 4, 5, 6, 5, 4, 23, 2, 1, 1, 1, 1, 1];
-function findUniqueElements(array) {
-    let mySet = new Set();
-    for (let i = 0; i < array.length; i++) {
-        mySet.add(array[i])
-    };
-    return [...mySet];
-}
+const findUniqueElements = array => [...new Set(array)];
 
 console.log(findUniqueElements(arrOfNumbers));
 
 
 const phoneNumber = `0123456789`;
-function hideNumber(phoneNumber) {
-    return phoneNumber.slice(-4).padStart(10, "*");
-};
+const hideNumber = phoneNumber => phoneNumber.slice(-4).padStart(10, "*")
 
 console.log(hideNumber(phoneNumber))
 
@@ -76,9 +68,9 @@ promiseFunction()
 
 
 async function asyncAwaitFunction() {
-    let users = await fetch('https://jsonplaceholder.typicode.com/users');
-    let parseUsers = await users.json();
-    let result = parseUsers.sort((a, b) => a.name.localeCompare(b.name));
+    const users = await fetch('https://jsonplaceholder.typicode.com/users');
+    const parseUsers = await users.json();
+    const result = parseUsers.sort((a, b) => a.name.localeCompare(b.name));
     console.log(result);
 }
 
@@ -92,4 +84,4 @@ function add(a = required(), b = required()) {
     return a + b;
 }
 
-add(1)
+add(1);
