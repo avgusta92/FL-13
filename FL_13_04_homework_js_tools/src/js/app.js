@@ -13,7 +13,6 @@ let textResultOfRound = document.getElementById("text-result-of-round");
 let roundNumber = document.getElementById("round-number");
 let textContentResult = document.getElementById("text-content-result");
 
-//BUTTONS
 const buttonStartLetsPlay = document.getElementById("button-start-lets-play");
 const buttonChoiceRock = document.getElementById("button-choice-rock");
 const buttonChoicePaper = document.getElementById("button-choice-paper");
@@ -50,7 +49,6 @@ function buttonChoiceFunc() {
 
 function rundomChoiceFunc() {
   let randomChois = Math.floor(Math.random() * 3);
-
   rundomChoiceImg.style.backgroundImage = arr[randomChois].img;
 
   return arr[randomChois];
