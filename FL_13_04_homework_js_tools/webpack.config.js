@@ -2,6 +2,7 @@ const HTMLWebpackPlugin = require("html-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CopyPlugin = require("copy-webpack-plugin");
+const ImageminPlugin = require('imagemin-webpack-plugin').default;
 
 module.exports = {
   entry: ["./src/js/app.js", "./src/scss/styles.scss"],
@@ -23,6 +24,7 @@ module.exports = {
     new CopyPlugin({
       patterns: [{ from: "./src/img", to: "img" }],
     }),
+    new ImageminPlugin({ test: /\.(jpe?g|png|gif|svg)$/i })
   ],
   module: {
     rules: [
