@@ -40,8 +40,6 @@ function buttonChoiceFunc() {
 
     fightingFunc(selectedItem, random);
 
-    rounds++;
-    roundNumber.innerHTML = `#${rounds}`;
   } else {
     mainResultFunc();
   }
@@ -62,8 +60,15 @@ function fightingFunc(selectedItem, random) {
   if (selectedItem.win === random.name) {
     textResultOfRound.innerHTML = `Round ${rounds},  ${selectWord} vs. ${rundomWord}, You’ve WON!`;
     winResults++;
-  } else {
+    rounds++;
+    roundNumber.innerHTML = `#${rounds}`;
+  } else if (selectedItem.lose === random.name) {
     textResultOfRound.innerHTML = `Round ${rounds},  ${selectWord} vs. ${rundomWord}, You’ve LOST!`;
+    rounds++;
+    roundNumber.innerHTML = `#${rounds}`;
+  } else {
+    textResultOfRound.innerHTML = `${selectWord} vs. ${rundomWord}, Play Again!`;
+    roundNumber.innerHTML = `#${rounds}`;
   }
 }
 
