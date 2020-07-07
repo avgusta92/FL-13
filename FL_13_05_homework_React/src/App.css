@@ -1,0 +1,185 @@
+*,
+p,
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+p,
+label,
+h2,
+h3 {
+  color: #505050;
+  font-family: "Roboto", sans-serif;
+}
+
+p,
+label {
+  font-size: 14px;
+  font-weight: 100;
+}
+
+h2,
+h3 {
+  font-weight: 700;
+}
+
+body {
+  background-color: #f0f0f4;
+}
+
+.App {
+  margin: 50px auto 0;
+  width: 70%;
+}
+
+.App-header {
+  color: red;
+}
+
+.item-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 10px 26px;
+  margin-bottom: 6px;
+  border-radius: 4px;
+}
+
+.search-input {
+  border: none;
+  width: 100%;
+  height: 44px;
+  border-radius: 4px;
+  padding-left: 26px;
+  padding-right: 26px;
+  margin-right: 10px;
+}
+
+.search-input::placeholder {
+  color: #e6e6e6;
+}
+
+.header-of-list {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.options-wrap {
+  position: relative;
+}
+
+.editing-course {
+  padding: 60px 20%;
+  background-color: white;
+  border-radius: 4px;
+  margin-left: 80px;
+  margin-right: 80px;
+}
+
+.header-editing-course {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.editing-course-wrap {
+  display: flex;
+}
+
+.editing-course-button-wrap {
+  display: flex;
+  margin-top: 50px;
+}
+
+.main-button {
+  background-image: linear-gradient(
+    to bottom,
+    #4ce3da,
+    #2ed6dd,
+    #0cc9df,
+    #00bcde,
+    #19aeda
+  );
+  color: white;
+  border-radius: 4px;
+  border: none;
+  height: 44px;
+  cursor: pointer;
+}
+
+.list-button {
+  width: 220px;
+}
+
+.editing-course-button {
+  width: 100%;
+}
+
+.button-cancel {
+  color: #bbbbbb;
+  font-weight: 700;
+  background-image: none;
+  background-color: transparent;
+  width: 100%;
+}
+
+.input-wrap {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.input {
+  border: solid 1px #e6e6e6;
+  border-radius: 6px;
+  margin-top: 8px;
+  height: 46px;
+  padding-left: 14px;
+  padding-right: 14px;
+  font-size: 12px;
+}
+
+.input-textarea {
+  height: 120px;
+  border: solid 1px #e6e6e6;
+  border-radius: 6px;
+  margin-top: 8px;
+  padding: 14px;
+  font-size: 12px;
+}
+
+.duration-authors-calendar-wrap {
+  display: flex;
+}
+
+.duration-authors-wrap {
+  flex-grow: 1;
+  margin-right: 20px;
+}
+
+.item-name {
+  font-weight: 700;
+}
+
+.text-item {
+  margin-right: 2%;
+}
+
+.text-item-data {
+  width: 15%;
+}
+
+.text-item-name {
+  width: 20%;
+}
+
+.text-item-description {
+  width: 48%;
+}
+
+.text-item-duration {
+  width: 15%;
+}
