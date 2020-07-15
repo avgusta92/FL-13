@@ -1,0 +1,28 @@
+.filter-input {
+  margin-right: 6px;
+  height: 42px;
+  width: 300px;
+  padding-left: 20px;
+  border: 1px solid lightgray;
+  border-radius: 4px;
+}
+
+::placeholder {
+  color: lightgray;
+}
+
+
+.button-style {
+  height: 42px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: transparent;
+  border: 1px solid lightgray;
+  border-radius: 4px;
+  color: #7a7878;
+  cursor: pointer;
+}
+
+.filter-wrap {
+  display: flex;
+}

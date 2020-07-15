@@ -1,0 +1,20 @@
+<nav>
+  <div class="nav-wrap">
+    <app-dropdown></app-dropdown>
+    <app-filter></app-filter>
+    <app-button
+      buttonName = "Add article"
+      (buttonClickFunk)="routerFunc(['/create'])"
+    ></app-button>
+  </div>
+</nav>
+
+<main class="content-wrap">
+  <app-news-item
+    *ngFor="let post of postsService.localPosts"
+    [post]="post"
+    (linkClickFunk)="routerFunc(['/view', post.id])"
+  ></app-news-item>
+</main>
+
+

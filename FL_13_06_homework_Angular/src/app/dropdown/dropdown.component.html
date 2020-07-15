@@ -1,0 +1,6 @@
+<select class="dropdown-style" [(ngModel)]="selectedSource" (change)="postsService.sourcesFilter(selectedSource)">
+  <option *ngFor="let source of postsService.sources">{{source}}</option>
+</select>
+
+
+

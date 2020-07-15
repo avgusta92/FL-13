@@ -1,0 +1,20 @@
+<div class="news-item-wrap">
+  <div class="left-content">
+    <img
+      class="img-style"
+      src="{{post.img}}"/>
+    <div class="text-news-wrap">
+      <div class="title-text-wrap">
+        <h4 class="news-title-style">{{post.title}}</h4>
+        <p class="news-text-style">{{post.text}}</p>
+      </div>
+      <a
+        class="news-link-style"
+        (click)="linkClickFunk.emit()"
+      >Read more ...</a>
+    </div>
+  </div>
+  <div class="right-content">
+    <p class="date-style">{{post.date | date}}</p>
+  </div>
+</div>

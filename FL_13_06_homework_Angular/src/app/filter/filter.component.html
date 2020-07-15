@@ -1,0 +1,12 @@
+<div class="filter-wrap">
+  <input
+    class="filter-input"
+    placeholder="Type your text ..."
+    [value]="inputValue"
+    (input)="onInput($event)"
+  >
+  <button
+    class="mdc-icon-button material-icons button-style"
+    (click)="filterFunc()"
+  >{{filterIcon}}</button>
+</div>

@@ -1,0 +1,41 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+};
+
+ul[class],
+ol[class] {
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+};
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd,
+label {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  color: #3d3d3d;
+};
+
+body {
+  background-color: #ebebeb;
+}
+
+p {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 1.4;
+}

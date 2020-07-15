@@ -1,0 +1,64 @@
+<main>
+  <div class="create-news-wrap">
+    <div class="top-inputs">
+
+        <div class="left-inputs">
+          <div class="input-wrap">
+            <label class="label-news">Title:</label>
+            <app-input
+              #title
+              placeholder = 'Add title of post ...'
+            ></app-input>
+          </div>
+
+          <div class="input-wrap">
+            <label class="label-news">Date:</label>
+            <input type="date" [(ngModel)]="dateInput" class="date-style">
+          </div>
+        </div>
+
+        <div class="right-inputs">
+          <div class="input-wrap">
+            <label class="label-news">Author:</label>
+            <app-input #author placeholder = 'Add author of post ...'></app-input>
+          </div>
+
+          <div class="input-wrap">
+            <label class="label-news">Source:</label>
+            <select [(ngModel)]="sourceInput" class="dropdown-style">
+              <option value="" disabled selected hidden>Please choose source...</option>
+              <option
+                *ngFor="let source of postsService.sources | slice:1"
+              >{{source}}</option>
+            </select>
+          </div>
+        </div>
+
+    </div>
+
+    <div class="input-wrap">
+      <label class="label-news">Img url:</label>
+      <app-input #img placeholder = 'Add img url of post...'></app-input>
+    </div>
+
+    <div class="bottom-inputs">
+      <label class="label-news">Text:</label>
+      <textarea
+        placeholder = "Add text of post..."
+        [(ngModel)]="textInput"
+      ></textarea>
+    </div>
+
+    <div class="button-wrap">
+      <button
+        class="button-cancel"
+        [routerLink] = "['/']"
+      >Cancel</button>
+      <app-button
+        buttonName = 'Submit'
+        (buttonClickFunk)="addNewPost()"
+      ></app-button>
+    </div>
+
+  </div>
+</main>
