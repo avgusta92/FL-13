@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="./index.css">
+  <title>JS Patterns</title>
+</head>
+<body>
+    <header>
+        <h2 class="header-title">JS Patterns</h2>
+    </header>
+    <main>
+        <div class="main-wrap">
+            <div class="tabs">
+                <button class="tab-button tab-button-active" id="allEmployeesTab" onClick="onTabClick('allEmployees')">All Employees</button>
+                <button class="tab-button" id="allUnitsTab" onClick="onTabClick('allUnits')">All Units</button>
+                <button class="tab-button" id="warningEmployeesTab" onClick="onTabClick('warningEmployees')">Warning Employees</button>
+            </div>
+            <div class="items-wrap" id="items-wrap"></div>
+        </div>
+    </main>
+    <script src="./main.js"></script>
+</body>
+</html>
